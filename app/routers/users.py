@@ -1,9 +1,9 @@
 
 import email
-import  models, schemas, utils, oauth2
+import  app.models as models, app.schemas as schemas, app.utils as utils, app.oauth2 as oauth2
 from fastapi import FastAPI, Response, status, HTTPException, Depends,APIRouter
 from sqlalchemy.orm import Session
-from database import engine,get_db
+from app.database import engine,get_db
 
 router = APIRouter(
     prefix= "/users",

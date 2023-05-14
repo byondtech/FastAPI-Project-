@@ -4,9 +4,9 @@ from jose import JWTError
 from jose  import JWTError, jwt
 from datetime import datetime,timedelta
 from fastapi.security import OAuth2PasswordBearer 
-import schemas,database, models
+import app.schemas as schemas ,app.database as database, app.models as models
 from sqlalchemy.orm import Session
-from config import settings
+from app.config import settings
 
 #SECRET KEY
 # ALGORITHM
