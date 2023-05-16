@@ -4,6 +4,11 @@
       {
         "src": "app/main.py",
         "use": "@vercel/python"
+      },
+
+      {
+        "src": "app/post-deploy.sh",
+        "use": "@vercel/static-build"
       }
     ],
     "routes": [
