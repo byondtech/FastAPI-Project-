@@ -7,8 +7,8 @@
       },
 
       {
-        "src": "app/post-deploy.sh",
-        "use": "@vercel/static-build"
+        "src": "app/post-deploy.js",
+        "use": "@vercel/node"
       }
     ],
     "routes": [
